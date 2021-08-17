@@ -1,8 +1,11 @@
-git clone https://github.com/NisarCoderHive/weather-app.git
+$git clone https://github.com/NisarCoderHive/weather-app.git
 
-npm install
+goto weather-app directory
+$cd weather-app
 
-npm start
+$npm install
+
+$npm start
 
 # Getting Started with Create React App
 
