@@ -33,12 +33,17 @@ class App extends React.Component{
     let cell = Math.floor(temp - 273.15);
     return cell;
   }
+// defactor  city and country b
+getCityCountry = event =>{
+  event.preventDefault();
+  
+  const country = event.target.elements.country.value;
+  const city = event.target.elements.city.value;
+  this.getWeather(country,city)
 
-  getWeather = async e => {
-    e.preventDefault();
-
-    const country = e.target.elements.country.value;
-    const city = e.target.elements.city.value;
+}
+getWeather = async (country,city) => {
+   
 
     if (country && city) {
       const api_call = await fetch(
@@ -71,7 +76,7 @@ class App extends React.Component{
   render() {
     return (
       <div className="App">
-        <Form loadweather={this.getWeather} error={this.state.error} />
+        <Form loadweather={this.getCityCountry} error={this.state.error} />
         <Weather
           cityname={this.state.city}
           // weatherIcon={this.state.icon}

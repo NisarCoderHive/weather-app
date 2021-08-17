@@ -4,7 +4,7 @@ const Weather = (props)=>{
     return(
         <div className="container">
         <div className="cards">
-            <h1>{props.cityname}</h1>
+            <h1 className="pt-2">{props.cityname}</h1>
 
             <h5 className="py-4">
             </h5>
