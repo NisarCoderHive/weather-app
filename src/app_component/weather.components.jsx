@@ -4,12 +4,13 @@ const Weather = (props)=>{
     return(
         <div className="container">
         <div className="cards">
-            <h1>{props.city}Bangalore {props.country}</h1>
+            <h1>{props.cityname}</h1>
+
             <h5 className="py-4">
             <i className="wi wi-day-sunny display-1"></i></h5>
-            <h1 className="py-2">25&deg;</h1>
-            {minmaxTemp(30,35)}
-            <h4 className="py-3">Rainy</h4>
+            <h1 className="py-2">{props.celsius}&deg;</h1>
+            {minmaxTemp(props.mintemp,props.maxtemp)}
+            <h4 className="py-3">{props.description}</h4>
 
         </div>
         </div>
