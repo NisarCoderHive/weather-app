@@ -1,5 +1,7 @@
 git clone https://github.com/NisarCoderHive/weather-app.git
+
 npm install
+
 npm start
 
 # Getting Started with Create React App
